@@ -9,16 +9,17 @@
 
 .navbar {
     display: flex;
-    justify-content: space-between;  
+    justify-content: center;  
     align-items: center;  
     padding: 30px;  
     background-color: #333;
     width: 100%; 
+    
 }
 
 
 .logo {
-    font-size: 20px;
+    font-size: 15px;
     color: #f10707;
     text-decoration: none;
 }
@@ -41,22 +42,10 @@
 .menu-link {
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 
 .menu-link:hover {
     color: #f70505;  
-}
-
-.carrito-icon {
-    color: rgb(247, 6, 6);
-    font-size: 24px;  
-    text-decoration: none;
-    padding: 20px;
-}
-
-.carrito-icon:hover {
-    color: #f1ebeb;  
-    
 }

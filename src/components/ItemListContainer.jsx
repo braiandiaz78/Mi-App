@@ -1,10 +1,14 @@
 import React from 'react'
 
-export const ItemListContainer = () => {
+export const ItemListContainer = ({greeting}) => {
   return (
-    <div>
-        <h1>Bienvenidos a TecnoBras</h1>
-    </div>
+
+    <section className='text-center  bg-body-secondary border'>
+
+      <h1 className='text-primary'>{greeting}</h1>
+    
+    </section>
+    
   )
 }
 

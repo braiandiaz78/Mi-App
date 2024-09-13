@@ -1,4 +1,6 @@
 import React from 'react'
+import CartWidget from './CartWidget'
+
 
 
 
@@ -11,14 +13,11 @@ import React from 'react'
         <ul className="menu">
             
             <li><a className="menu-link" href="#">Notebooks</a></li>
-            <li><a className="menu-link" href="#">Mause y Teclados</a></li>
+            <li><a className="menu-link" href="#">Mouse y Teclados</a></li>
             <li><a className="menu-link" href="#">Contacto</a></li>
-            
+            <CartWidget/>
         </ul>
-
-        <a href='#' className="carrito-icon">
-          <i className="bi bi-cart4"></i>
-        </a>
+        
     </nav>
   )
 }
