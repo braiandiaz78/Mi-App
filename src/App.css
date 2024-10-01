@@ -49,3 +49,38 @@
 .menu-link:hover {
     color: #f70505;  
 }
+
+.cart img{
+
+    width: 30px; 
+    height: 30px; 
+    background-color: rgb(233, 8, 8);
+    
+    
+}
+
+/*CSS NAVBAR*/
+
+/*CSS ItemList*/
+
+
+
+
+.producto-imagenes {
+    display: flex;
+    flex-wrap: wrap;                      /* Permite que las imágenes se ajusten a nuevas filas */
+    justify-content: center;              /* Centra las imágenes en el contenedor */
+    gap: 10px;                            /* Espacio entre imágenes */
+    max-width: 400px;                     /* Ancho máximo del contenedor */
+    margin: 0 auto;                       /* Centra el contenedor horizontalmente */
+  }
+  
+.main-title {
+    align-items: center;
+}
+  
+  
+  
+  
+  
+  

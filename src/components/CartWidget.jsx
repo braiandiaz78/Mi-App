@@ -1,11 +1,12 @@
 import React from 'react'
 
-function CartWidget() {
+
+ function CartWidget() {
   return (
 
     <> 
-       
-       <button>🛒2</button>
+       <button className="cart"><img src="../cart3.svg" alt=""/></button>
+
     </>
    
   )

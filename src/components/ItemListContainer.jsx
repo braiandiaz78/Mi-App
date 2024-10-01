@@ -1,15 +1,30 @@
-import React from 'react'
+import React, { useEffect, useState } from "react";
+import { pedirDatos } from "../helpers/pedirDatos";
+import ItemList from "./ItemList";
+import { useParams } from "react-router-dom";
 
-export const ItemListContainer = ({greeting}) => {
-  return (
+const ItemListContainer = () => {
+    const [productos, setProductos] = useState([]);
+    const { categoria } = useParams(); // Obtén la categoría de los parámetros
 
-    <section className='text-center  bg-body-secondary border'>
+    useEffect(() => {
+        pedirDatos()
+            .then((res) => {
+                // Filtra los productos si hay una categoría
+                const productosFiltrados = categoria ? res.filter((producto) => producto.categoria === categoria) : res;
+                setProductos(productosFiltrados);
+            })
+            .catch((error) => {
+                console.error("Error al obtener los datos:", error);
+            });
+    }, [categoria]); // Dependencia de la categoría
 
-      <h1 className='text-primary'>{greeting}</h1>
-    
-    </section>
-    
-  )
-}
+    return (
+        <div>
+            <ItemList productos={productos} />
+        </div>
+    );
+};
 
-export default ItemListContainer
+export default ItemListContainer;
+
