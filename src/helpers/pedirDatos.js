@@ -4,7 +4,7 @@ export const pedirDatos = () => {
 
     return new Promise ((resolve, reject)=> {
 
-        setTimeout (() => {
+        setTimeout ( () => {
             resolve (data);
 
         }, 500)
@@ -12,8 +12,9 @@ export const pedirDatos = () => {
 }
 
 
-export const pedirItemPorId = () => {
+export const pedirItemPorId = (id) => {
     return new Promise ((resolve, reject) => {
+        
         const item = data.find ((el) => el.id === id)
 
         if (item) {

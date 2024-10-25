@@ -12,7 +12,7 @@ export const Item= ({producto}) => {
             <p>Precio: ${producto.precio}</p>
             <p>Categoria: {producto.categoria}</p>
             <p>{producto.descripcion}</p>
-            <Link className="ver-mas" to={`/item`}>Ver más</Link>
+            <Link className="ver-mas" to={`/item/${producto.id}`}>Ver más</Link>
 
 
 

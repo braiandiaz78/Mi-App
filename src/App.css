@@ -79,8 +79,85 @@
     align-items: center;
 }
   
-  
-  
-  
-  
-  
+.Item-contar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem ;
+
+}
+
+.item-contar button, .agregar-al-carrito  {
+    background-color: black;
+    border: 0;
+    width: 2rem;
+    height: 2rem;
+    color: rgb(252, 6, 6);
+    border-radius: .5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 1;
+    border: 2px solid var (black) ;
+    transition: .2s;
+}
+
+.item-contar button:hover, .agregar-al-carrito:hover{
+    background-color: white;
+    color: black;
+
+
+}
+
+.agregar-al-carrito {
+    width:  auto;
+    height: auto;
+    margin-top: 1rem;
+    padding: 1rem;
+
+
+}
+
+.boton-menos {
+    width: 3rem;
+    color: #f70505;
+    background-color: black;
+}
+
+.boton-mas {
+    width: 3rem;
+    color: #f70505;
+    background-color: black;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+    align-items: start;
+}
+
+.formulario input {
+    padding: .7rem;
+    width: 20rem;
+    border-radius: .5rem;
+    border: 2px solid var(black);
+}
+
+.formulario input:focus {
+    outline: 0;
+    border: 2px solid var(black);
+    outline: 2px solid var(white);
+
+}
+
+.formulario button {
+    color: #f10707;
+    background-color: black;
+
+    
+}
+

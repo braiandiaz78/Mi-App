@@ -1,30 +1,42 @@
 import React, { useEffect, useState } from "react";
-import { pedirDatos } from "../helpers/pedirDatos";
 import ItemList from "./ItemList";
 import { useParams } from "react-router-dom";
+import { collection, getDocs, query, where } from "firebase/firestore";
+import { db } from "../firebase/data";
 
 const ItemListContainer = () => {
-    const [productos, setProductos] = useState([]);
-    const { categoria } = useParams(); // Obtén la categoría de los parámetros
+  const [productos, setProductos] = useState([]);
+  const { categoria } = useParams(); // Obtén la categoría de los parámetros
 
-    useEffect(() => {
-        pedirDatos()
-            .then((res) => {
-                // Filtra los productos si hay una categoría
-                const productosFiltrados = categoria ? res.filter((producto) => producto.categoria === categoria) : res;
-                setProductos(productosFiltrados);
-            })
-            .catch((error) => {
-                console.error("Error al obtener los datos:", error);
-            });
-    }, [categoria]); // Dependencia de la categoría
+  useEffect(() => {
+    const productosRef = collection(db, "productos");
 
-    return (
-        <div>
-            <ItemList productos={productos} />
-        </div>
-    );
+    // Verificar si categoria está definida antes de realizar la consulta
+    let q;
+    if (categoria) {
+      q = query(productosRef, where("categoria", "==", categoria));
+    } else {
+      q = productosRef; // Si no hay categoría, obten todos los productos
+    }
+
+    getDocs(q)
+      .then((resp) => {
+        setProductos(
+          resp.docs.map((doc) => {
+            return { ...doc.data(), id: doc.id };
+          })
+        );
+      })
+      .catch((error) => {
+        console.error("Error obteniendo los productos: ", error);
+      });
+  }, [categoria]); // Dependencia de la categoría
+
+  return (
+    <div>
+      <ItemList productos={productos} />
+    </div>
+  );
 };
 
 export default ItemListContainer;
-

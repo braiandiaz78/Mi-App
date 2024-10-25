@@ -5,7 +5,9 @@
         "categoria": "Notebooks",
         "descripcion": "La Notebook Gaming Aorus 15 i7-13700H 1TB SSD 16GB RTX 4070 es una potente computadora portátil para jugadores y creadores. Con Intel Core i7-13700H, 16GB RAM y NVIDIA GeForce RTX 4070. Su SSD de 1TB garantiza velocidad y espacio.",
         "imagen": "https://f.fcdn.app/imgs/2ba7c8/www.zonatecno.com.uy/zoteuy/e342/webp/catalogo/103598_103598_1/1500-1500/notebook-gaming-aorus-15-i7-13700h-1tb-ssd-16gb-rtx-4070-notebook-gaming-aorus-15-i7-13700h-1tb-ssd-16gb-rtx-4070.jpg",
-        "precio":  2.989
+        "precio":  2.989,
+        "stock": 5
+        
     },
     
     {
@@ -14,7 +16,8 @@
         "categoria": "Notebooks",
         "descripcion": "Notebook Gamer HP Victus 15 Ryzen 5 7535HS 512GB 8GB RTX2050",
         "imagen": "https://f.fcdn.app/imgs/d9aa79/www.zonatecno.com.uy/zoteuy/56c5/webp/catalogo/104981_104981_1/1500-1500/notebook-gamer-hp-victus-15-ryzen-5-7535hs-512gb-8gb-rtx2050-notebook-gamer-hp-victus-15-ryzen-5-7535hs-512gb-8gb-rtx2050.jpg",
-        "precio": 2.899
+        "precio": 2.899,
+        "stock": 5
     
     },
     
@@ -24,7 +27,8 @@
         "categoria": "Notebooks",
         "descripcion": "La notebook gaming AERO 5 KE4 ofrece un rendimiento excepcional. Con Intel Core i7-12700H y NVIDIA GeForce RTX 3060, brinda rendimiento fluido y visual impresionante. SSD de 1TB, 16GB RAM garantizan tiempos de carga rápidos y multitarea eficiente. Diseño robusto y características específicas para juegos la hacen una opción ideal para jugadores que buscan alto rendimiento y confiabilidad.",
         "imagen": "https://f.fcdn.app/imgs/5ad89d/www.zonatecno.com.uy/zoteuy/0e19/webp/catalogo/103596_103596_1/1500-1500/notebook-gaming-aero-5-ke4-i7-12700h-1tb-ssd-16gb-rtx-3060p-notebook-gaming-aero-5-ke4-i7-12700h-1tb-ssd-16gb-rtx-3060p.jpg",
-        "precio": 2.299
+        "precio": 2.299,
+        "stock": 5
     
     },
     
@@ -35,7 +39,8 @@
         "categoria": "Notebooks",
         "descripcion": "La Notebook Gamer MSI GE68 Raider i9-13950H satisface a los jugadores más exigentes. Procesador Intel Core i9-13950H, 16GB de RAM y tarjeta gráfica RTX 4060 para rendimiento excepcional en juegos y aplicaciones. Almacenamiento de 1TB para gran cantidad de juegos y archivos. Diseño robusto y llamativo, pantalla de alta calidad para experiencia inmersiva. Ideal para entusiastas del gaming sin compromisos.",
         "imagen": "https://f.fcdn.app/imgs/c6f37a/www.zonatecno.com.uy/zoteuy/a4dc/webp/catalogo/103461_103461_1/1500-1500/notebook-gamer-msi-ge68-raider-i9-13950h-1tb-16gb-rtx4060-notebook-gamer-msi-ge68-raider-i9-13950h-1tb-16gb-rtx4060.jpg",
-        "precio": 3.649
+        "precio": 3.649,
+        "stock": 5
     },
     
     {
@@ -44,7 +49,8 @@
         "categoria": "Monitores",
         "descripcion": "Monitor Gamer Xiaomi G34WQI WQHD 180Hz Curvo",
         "imagen": " https://f.fcdn.app/imgs/1e3a2e/www.zonatecno.com.uy/zoteuy/4e4e/webp/catalogo/106216_106216_1/1500-1500/monitor-gamer-xiaomi-g34wqi-wqhd-180hz-34-curvo-34-monitor-gamer-xiaomi-g34wqi-wqhd-180hz-34-curvo-34.jpg",
-        "precio": 4.569
+        "precio": 4.569,
+        "stock": 5
     },
     
     {
@@ -53,7 +59,8 @@
         "categoria": "Monitores",
         "descripcion": "Monitor Gaming Curvo Gigabyte G27FC A 27 FHD Black",
         "imagen": "https://f.fcdn.app/imgs/88be72/www.zonatecno.com.uy/zoteuy/fb60/webp/catalogo/104778_104778_1/1500-1500/monitor-gaming-curvo-gigabyte-g27fc-a-27-fhd-black-monitor-gaming-curvo-gigabyte-g27fc-a-27-fhd-black.jpg",
-        "precio": 3790
+        "precio": 3790,
+        "stock": 5
     },
     
     {
@@ -63,7 +70,8 @@
         "categoria": "Monitores",
         "descripcion":"Monitor MSI Pro MP241X 23.8 FHD 75Hz 4ms Black",
         "imagen": "https://f.fcdn.app/imgs/cb20a5/www.zonatecno.com.uy/zoteuy/18c9/webp/catalogo/104477_104477_1/1500-1500/monitor-msi-pro-mp241x-23-8-fhd-75hz-4ms-black-monitor-msi-pro-mp241x-23-8-fhd-75hz-4ms-black.jpg",
-        "precio": 1690
+        "precio": 1690,
+        "stock": 5
     },
     
     {
@@ -72,7 +80,8 @@
         "categoria": "Monitores",
         "descripcion": "Visualiza tu victoria con el monitor de juegos para deportes electrónicos MSI Optix G273. Equipado con un panel IPS de 1920x1080, frecuencia de actualización de 165 Hz y tiempo de respuesta de 1 ms, Optix G273 le brindará la ventaja competitiva que necesita para derrotar a sus oponentes",
         "imagen": "https://f.fcdn.app/imgs/8bec32/www.zonatecno.com.uy/zoteuy/b73c/webp/catalogo/101639_101639_1/1500-1500/monitor-gamer-msi-optix-g273-27-fhd-165hz-g-sync-monitor-gamer-msi-optix-g273-27-fhd-165hz-g-sync.jpg",
-        "precio": 3290
+        "precio": 3290,
+        "stock": 5
     }
     
     ]

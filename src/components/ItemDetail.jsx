@@ -1,7 +1,28 @@
-import React from 'react'
+import React, { useContext, useState } from 'react'
 import { Item } from './Item'
+import { ItemContair } from './ItemContair';
+import { CartContext } from '../context/CartContext';
+
 
 export const ItemDetail = ({item}) => {
+
+    
+    const { carrito, agregarAlCarrito}= useContext(CartContext);
+
+    const [cantidad, setCantidad] = useState (1);
+
+    const handleRestar= () => {
+      cantidad > 1 && setCantidad (cantidad - 1)
+    }
+
+    const handleSumar= () =>{
+      cantidad < item.stock && setCantidad (cantidad + 1)
+    }
+
+  
+
+  
+  
   return (
     <div className="container">
         <div className="producto-detalle">
@@ -11,6 +32,7 @@ export const ItemDetail = ({item}) => {
                 <p className="descripcion">{item.descripcion}</p>
                 <p className="categoria">Categoria: {item.categoria}</p>
                 <p className="precio">${item.precio}</p>
+                <ItemContair cantidad={cantidad} handleSumar={handleSumar} handleRestar={handleRestar} handleAgregar={() => {agregarAlCarrito (item, cantidad)}}/>
 
             </div>
 
